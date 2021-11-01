@@ -4,7 +4,7 @@
 #
 Name     : isomd5sum
 Version  : 1.2.3
-Release  : 13
+Release  : 14
 URL      : https://github.com/rhinstaller/isomd5sum/archive/1.2.3.tar.gz
 Source0  : https://github.com/rhinstaller/isomd5sum/archive/1.2.3.tar.gz
 Summary  : Utilities for working with md5sum implanted in ISO images
@@ -86,20 +86,20 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1589850525
+export SOURCE_DATE_EPOCH=1635742984
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
-export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FCFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
-export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=4 "
+export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=auto "
+export FCFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=auto "
+export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=auto "
+export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=auto "
 make  %{?_smp_mflags}
 
 
 %install
-export SOURCE_DATE_EPOCH=1589850525
+export SOURCE_DATE_EPOCH=1635742984
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/isomd5sum
 cp %{_builddir}/isomd5sum-1.2.3/COPYING %{buildroot}/usr/share/package-licenses/isomd5sum/075d599585584bb0e4b526f5c40cb6b17e0da35a
