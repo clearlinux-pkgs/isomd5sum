@@ -7,7 +7,7 @@
 #
 Name     : isomd5sum
 Version  : 1.2.5
-Release  : 18
+Release  : 19
 URL      : https://github.com/rhinstaller/isomd5sum/archive/1.2.5/isomd5sum-1.2.5.tar.gz
 Source0  : https://github.com/rhinstaller/isomd5sum/archive/1.2.5/isomd5sum-1.2.5.tar.gz
 Summary  : Utilities for working with md5sum implanted in ISO images
